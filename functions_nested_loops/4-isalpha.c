@@ -20,5 +20,5 @@ int _isalpha(int c)
 				x = 1;
 		}
 	}
-	return (x);	
+	return (x);
 }
