@@ -7,12 +7,10 @@
  */
 int print_last_digit(int x)
 {
-	int r = 0;
+	int n = x % 10;
 
-	if (x < 0)
-		r = -1 * (x % 10);
-	else
-		r = x % 10;
-	_putchar(r);
-	return (r);
+	if (n < 0)
+		n = -n;
+	_putchar(n + '0');
+	return (n);
 }
