@@ -1,0 +1,13 @@
+CC = gcc
+SRC = main.c school.c
+
+school: $(SRC:.c=.o)
+	$(CC) $(SRC:.c=.o) -o school
+
+%.o: %.c
+	$(CC) -c $<
+
+all: school
+
+clean:
+	rm -f school $(SRC:.c=.o)
