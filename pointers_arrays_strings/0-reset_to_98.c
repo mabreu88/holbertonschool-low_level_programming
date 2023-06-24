@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * reset_to_98 - Checker
  *
  *@n: Parameter to check
