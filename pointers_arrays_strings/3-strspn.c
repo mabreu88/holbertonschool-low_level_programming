@@ -10,27 +10,26 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int cont = 0, check;
-	char *go = accept;
+	int count = 0, flag;
+	char *start = accept;
 
 	while (*s)
 	{
-		check = 0;
-		while (*go)
+		flag = 0;
+		while (*accept)
 		{
-			if (*go == *s)
+			if (*accept == *s)
 			{
-
-				cont++;
-				check = 1;
+				count++;
+				flag = 1;
 				break;
 			}
-			go++;
+			accept++;
 		}
-		accept = go;
 		s++;
-		if (check == 0)
+		accept = start;
+		if (flag == 0)
 			break;
 	}
-	return (cont);
+	return (count);
 }
