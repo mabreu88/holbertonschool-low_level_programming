@@ -27,8 +27,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			go++;
 		}
-		s++;
 		accept = go;
+		s++;
 		if (check == 0)
 			break;
 	}
