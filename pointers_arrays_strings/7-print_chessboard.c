@@ -4,7 +4,8 @@
  *
  * @a: An array to print
  *
- * Return: Not (https://www.youtube.com/watch?v=rgc_LRjlbTU&ab_channel=ChessVEVO)
+ * Return: PLay
+ * (https://www.youtube.com/watch?v=rgc_LRjlbTU&ab_channel=ChessVEVO)
  */
 void print_chessboard(char (*a)[8])
 {
