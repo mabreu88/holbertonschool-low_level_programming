@@ -8,7 +8,7 @@
  *
  *@argv: Argument counter
  *
- *@etrun: 0 Success, 1 Error
+ *@Retrun: 0 Success, 1 Error
  */
 int main(int argc, char **argv)
 {
