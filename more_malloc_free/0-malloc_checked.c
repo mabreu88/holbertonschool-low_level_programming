@@ -8,9 +8,14 @@
 void *malloc_checked(unsigned int b)
 {
 	void *x;
-
+/*
+ * We assign to x the amount of memory equal to the value of b
+ */
 	x = malloc(b);
 	if (x == NULL)
+/*
+ * If x is null we leave with 98
+ */
 		exit(98);
 	return (x);
 }
