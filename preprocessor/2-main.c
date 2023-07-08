@@ -5,6 +5,10 @@
  */
 int main(void)
 {
+/*
+ * __FILE__ is a standard predefined macro. With %s we indicate that we want
+ *to print a character string
+ */
 	printf("%s\n", __FILE__);
 	return (0);
 }
