@@ -5,8 +5,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	signed long int size = sizeof(n) * 8 - 1;
-	int flag = 0;
+	unsigned long int max, flag = 0;
 
 	if (n == 0)
 	{
@@ -14,10 +13,17 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (size >= 0)
+	max = 1UL << (sizeof(n) * 8 - 1);
+
+	while (max)
 	{
-	flag = ((n >> size) & 1) ? 1 : (flag ? _putchar('0') : 0);
-		_putchar(((n >> size) & 1) ? '1' : 0);
-		size--;
+		if (flag == 1 && (n & max) == 0)
+			_putchar('0');
+		else if ((n & max) != 0)
+		{
+			_putchar('1');
+			flag = 1;
+		}
+		max >>= 1;
 	}
 }
