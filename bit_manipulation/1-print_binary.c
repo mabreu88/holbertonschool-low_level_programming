@@ -5,23 +5,17 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int max = 1 << (sizeof(n) * 8 - 1);
+	signed long int max = sizeof(n) * 8 - 1;
 	unsigned int x = 0;
-
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	while (max)
+	while (max >= 0)
 	{
-		if (x == 1 && (n & max) == 0)
-			_putchar('0');
-		else if ((n & max) != 0)
-		{
-			_putchar('1');
-			x = 1;
-		}
-		max >>= 1;
+	x = ((n >> max) & 1) ? 1 : (x ? _putchar('0') : 0);
+		_putchar(((n >> max) & 1) ? '1' : 0);
+		max--;
 	}
 }
