@@ -5,7 +5,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int x = 0, max = 32768;
+	unsigned long int max = 1 << (sizeof(n) * 8 - 1);
+	unsigned int x = 0;
 
 	if (n == 0)
 	{
