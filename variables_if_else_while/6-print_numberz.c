@@ -7,7 +7,10 @@
 int main(void)
 {
 	int x;
-
+/*
+ * With for structure increase x each time to print all numbers of base 10
+ * form 0 to 9
+ */
 	for (x = '0'; x <= '9'; x++)
 	putchar(x);
 putchar('\n');
