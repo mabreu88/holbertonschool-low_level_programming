@@ -7,7 +7,9 @@
 int main(void)
 {
 	int x;
-
+/*
+ * With for structure increse x each time and print it
+ */
 	for (x = 0; x < 10; x++)
 		printf("%i", x);
 	printf("\n");
