@@ -2,7 +2,7 @@
 /**
  *read_textfile - function that reads a text file and prints it to the POSIX
  *standard output
- *@filename: The filename 
+ *@filename: The filename
  *@letters: is the number of letters it should read and print
  *Return: the actual number of letters it could read and print
  */
