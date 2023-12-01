@@ -9,5 +9,38 @@ From there, you will be introduced to higher-level languages, increasingly advan
 
 The final fundamentals module emphasizes automation, scalability and reliability, so you will be familiar with the infrastructure and best practices similar to those applied in large technology companies. In parallel to web development, you will also advance in algorithmic understanding, technical writing, debugging and project management.
 
-Translated with DeepL.com (free version)
+### Program
+
+* Shell Navigation
+* Emacs
+* Vi
+* Git
+* Shell Basics
+* Shell, permissions
+* Shell, I/O Redirections and filters
+* Shell, init files, variables and expansions
+* C - Hello, World
+* C - Variables, if, else, while
+* C - Functions, nested loops
+* C - Makefiles
+* C - More functiones, more nested loops
+* C - Pointers, arrays and strings
+* C - More pointers, arrays and strings
+* C - Even more pointers, arrays and strings
+* C - Recursion
+* C - Static libraries
+* C - argc, argv
+* C - malloc, free
+* C - More malloc, free
+* C - Preprocessor
+* C - Structures, typedef
+* C - Function pointers
+* C - Variadic functions
+* C - printf
+* C - Singly linked lists
+* C - Doubly linkes lists
+* C - Bit manipulation
+* C - File I/O
+* C - Hash tables
+* C - simple Shell
 
